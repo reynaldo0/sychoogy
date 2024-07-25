@@ -9,12 +9,12 @@
     />
     <link
       rel="icon"
-      href="{{ asset('kaiadmin/assets/img/kaiadmin/favicon.ico')}}"
+      href="/kaiadmin/assets/img/kaiadmin/favicon.ico"
       type="image/x-icon"
     />
 
     <!-- Fonts and icons -->
-    <script src="{{ asset('kaiadmin/assets/js/plugin/webfont/webfont.min.js')}}"></script>
+    <script src="/kaiadmin/assets/js/plugin/webfont/webfont.min.js"></script>
     <script>
       WebFont.load({
         google: { families: ["Public Sans:300,400,500,600,700"] },
@@ -25,7 +25,7 @@
             "Font Awesome 5 Brands",
             "simple-line-icons",
           ],
-          urls: ["assets/css/fonts.min.css"],
+          urls: ["/kaiadmin/assets/css/fonts.min.css"],
         },
         active: function () {
           sessionStorage.fonts = true;
@@ -34,12 +34,12 @@
     </script>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/plugins.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/kaiadmin.min.css')}}" />
+    <link rel="stylesheet" href="/kaiadmin/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/kaiadmin/assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="/kaiadmin/assets/css/kaiadmin.min.css" />
 
     <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="{{ asset('kaiadmin/assets/css/demo.css')}}" />
+    <link rel="stylesheet" href="/kaiadmin/assets/css/demo.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -699,7 +699,10 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Account Setting</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <form action="{{ route('logout') }}" method="POST">
+                          @csrf
+                          <button type="submit" class="dropdown-item">Logout</button>
+                        </form>
                       </li>
                     </div>
                   </ul>

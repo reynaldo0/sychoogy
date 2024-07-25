@@ -31,7 +31,7 @@
                     @csrf
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" name="email" required="" placeholder="Email">
-                        <div class="input-group-append">
+                        <div class="input-group-append">\
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
                             </div>
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-block btn-primary">
+                    <button type="submit" class="btn btn-block btn-primary mb-3">
                         <i class="mr-2"></i> Login
                     </button>
                 </form>
