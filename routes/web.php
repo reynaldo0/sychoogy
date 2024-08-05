@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('admin');
+    return view('layouts.template');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::view('template', 'layouts.template');
