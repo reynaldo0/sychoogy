@@ -24,9 +24,9 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fa fa-user"></i>
               <p>
-                Setting
+                User
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -68,6 +68,7 @@
               </li>
             </ul>
           </li>
+          
           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -90,6 +91,16 @@
                 </a>
               </li>
             </ul>
+          </li>
+
+          <li class="nav-item menu-open md:fixed-bottom mt-96">
+            <a href="#" class="nav-link active bg-red">
+              <i class="nav-icon fa fa-sign-in"></i>
+
+              <p>
+                Logout
+              </p>
+            </a>
           </li>
           
         </ul>
