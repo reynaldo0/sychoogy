@@ -47,7 +47,7 @@
           </li>
           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fa fa-paper-plane"></i>
               <p>
                 Konsultasi
                 <i class="right fas fa-angle-left"></i>
@@ -94,13 +94,15 @@
           </li>
 
           <li class="nav-item menu-open md:fixed-bottom mt-96">
-            <a href="#" class="nav-link active bg-red">
-              <i class="nav-icon fa fa-sign-in"></i>
-
-              <p>
-                Logout
-              </p>
-            </a>
+            <form action="{{ route('logout') }}" method="POST">
+              @csrf
+              <button href="#" class="nav-link active bg-red">
+                
+                <p>
+                  Logout
+                </p>
+              </button>
+            </form>
           </li>
           
         </ul>
